@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Event Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Management System</h1>
+
+    <button id="toggleMode">Toggle Dark Mode</button>
+
+    <form id="eventForm">
+      <input type="text" id="eventName" placeholder="Event Name" required>
+      <input type="date" id="eventDate" required>
+      <textarea id="eventDesc" placeholder="Event Description" required></textarea>
+      <button type="submit">Save Event</button>
+    </form>
+
+    <div class="view-buttons">
+      <button id="listViewBtn">List View</button>
+      <button id="calendarViewBtn">Calendar View</button>
+    </div>
+
+    <h2>Upcoming Events</h2>
+    <div id="eventList"></div>
+
+    <div id="calendar" style="display:none;">
+      <h2>Event Calendar</h2>
+      <div id="calendarContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
